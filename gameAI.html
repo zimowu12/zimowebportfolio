@@ -134,19 +134,19 @@
                         <p>DetectEnemy is a Composite behaviour that detects enemy attack and try to avoid them. It uses a selector to select through four sequences. The first sequence represents when the enemy is far from the character. The character shoots the enemy by calling the Composite ShootEnemy, and then avoids the closest enemy. The second sequence is when the enemy is close. The character evades the closest enemy first, and then shoots the enemy. The third sequence is when the enemy is in the danger zone. The character evades the closest enemy, and shoots the enemy. Finally, the last sequence represents that the character will shoot the enemy when they are under attack.
                             I chose different methods for the character to avoid/evade/kill the enemies, because when the enemy is far, the character has time to shoot the enemy, but when the enemies are close to the character, the character should move away from the enemy first(move to a safer position), and then try to kill them.
                             </p>
-                        <img src="/images/gameAI/detectenemy.jpg", alt="conditional">
+                        <img src="images/gameAI/detectenemy.jpg", alt="conditional">
                         <p>DetectBullets is a Composite behaviour that detects and avoids the bullets. It runs through a sequence: if the bullet is imminent, it will select whether to the evade the closest bullet or avoid the closest bullet.</p>
-                        <img src="/images/gameAI/detectbullets.jpg", alt="conditional">
+                        <img src="images/gameAI/detectbullets.jpg", alt="conditional">
                         <p>CheckHealth is a Composite Behaviour that checks the character’s health status. When the health of the character is low and the health is available, the character will move to the closest health. I did not let the character moves to the health when the health is not full, because in that case, the character will get all the health even if it has a about full health status, which will be a waste of time and resources.</p>
-                        <img src="/images/gameAI/checkhealth.jpg", alt="conditional">
+                        <img src="images/gameAI/checkhealth.jpg", alt="conditional">
                         <p>GetAmmo is a Composite behaviour that makes the character moves to the closest ammo when the gun is out of ammo and ammo is available.</p>
-                        <img src="/images/gameAI/getammo.jpg", alt="conditional">
+                        <img src="images/gameAI/getammo.jpg", alt="conditional">
                         <p>CollectItems is a Composite behaviour that makes the character moves to the closest item when the item is available.</p>
-                        <img src="/images/gameAI/collectitems.jpg", alt="conditional">
+                        <img src="images/gameAI/collectitems.jpg", alt="conditional">
                         <p>SafeDistanceWithEnemy is a Composite behaviour that runs through three sequences. It checks the three conditions of the character’s and the enemies’ positions. It makes the character runs away from the enemies in all the three conditions.</p>
-                        <img src="/images/gameAI/safedistance.jpg", alt="conditional">
+                        <img src="images/gameAI/safedistance.jpg", alt="conditional">
                         <p>RunFromEnemy is a Composite behaviour that uses a selector. It lets the character chooses to avoid the closest enemy or evade it.</p>
-                        <img src="/images/gameAI/runfrom.jpg", alt="conditional">
+                        <img src="images/gameAI/runfrom.jpg", alt="conditional">
                     </div>
 
                 </div>
