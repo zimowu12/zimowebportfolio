@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Zimo's personal portfolio website. This subpage contains the Borealis Project.">
+        <title>Depression</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="hero">
+
+            <nav>
+                <img src="images/other/logoxi.png" class="logo">
+                
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#proj">PROJECTS</a></li>
+                    <li><a href="index.html#dreams">DREAMS</a></li>
+                    <li><a href="#contactme">CONTACT</a></li>
+                </ul>
+                
+                
+            </nav>
+         
+            
+
+            <div class="rec">
+                <h3>Welcome to Zimo's Portfolio Website</h1>>
+            </div>
+           
+
+            <div class="text-box">
+                    <h1>A-maze-ing Pipes</h1>
+                <h4>2.5D shooter game made with Unreal Engine 4</h4>
+                
+                
+                <p>
+                    This is a group project I've done with my group members in a third year foundamentals of software development course. A-mazing pipes is a 2.5D maze game made with Unreal Engine 4 and C++. 
+                    There are 7 people in our team. It is all our first time working in a large team. We faced many challenges, but we worked together and solved the problems together. I learned a lot
+                    from this project.
+        
+                </p>
+                <ul>
+                    <h5>Group members:</h5>
+                    <li>Zimo Wu</li>
+                    <li>Joshua Binh-Trong Mac</li>
+                    <li>David Christopher Chase</li>
+                    <li>Fiona Rose Whitfield</li>
+                    <li>Divaydeep Singh</li>
+                    <li>Cheng Liu</li>
+                    <li>Marcus Graeme Warren</li>
+                </ul>
+                
+                    
+            </div>
+
+            
+                
+            <div class="image">
+                <img src="images/other/pipes.jpg" alt="title page">
+            </div>
+
+            
+        </section>
+
+        <div class="bot">
+            <h3>Welcome to Zimo's Portfolio Website</h1>>
+        </div>
+
+        <section class="introduce">
+            <div class="text-box4">
+                <h1>Implementation Process</h1>
+                <h4>Overall</h4>
+                <p>In this project, the instructor tried to let us experience what it is like to work on a software project over a short time frame
+                and it is a mockup of industry software development.
+                    
+                    We used Agil development system and CASE tools based on JIRA.
+                    Jira is linked to document creation tools, a git repository and a chat system. We used Slack as a chat tool. 
+                    <br>
+                    *All our project work, deliverables and communications were fully documented on these tools, and unfortunately I do not have
+                    access to them now.
+
+
+                    The biggest problem we faced was everyone pictured the game idea differently in their own minds.
+                    As the lead artist, I had to change the entire art style of the game in the implementation process because of the design of 
+                    using the game engine to create a 2.5D game instead of a 2D game.
+                    
+                </p>
+           
+                <h4>Game Idea</h4>
+                <p></p>
+
+                <h4>Design Goals</h4>
+                <ul>
+                    <li>Performance</li>
+                    <ul>
+                        <li>Response time: Ideally, the program should respond to the user immediately or as soon as possible so that the player can have a great game experience. However, it might take some time to load the game.</li>
+                        <li>Throughput: The system should complete basic movement, compute enter and exit of tubes, counting how many times left, score the collection player has earned, and determine whether the player has reached the destination at the same time.</li>
+                        <li>Memory: Player, tubes, maps, and time counter need separate memory space. Moreover, since the game has a saving function. The levels that the player has completed and the scores should be stored so that the next time the player enters the game, they can start from where they left off.</li>
+                    </ul>
+                    <li>Dependability</li>
+                    <ul>
+                        <li>Robustness:  All input despite “W A S D”  and mouse clicking on the menu are recognized as invaild input, which will not have any movement regard on the player.
+                            </li>
+                        <li>Reliability: “W A S D” is used to perform movement of the player. Mouse licking is used to interact with menus. All other behaviours will not be considered as valid behaviours from players, which will not be take from the system.
+                            </li>
+                        <li>Availability: Before the game actually begins, tasks are considered to complete the functions associated with the menu list. Within the game, system should go through the algorithms inside the game. Therefore, the time percentage depends on how long users would stay on the menu page and game running, but normal tasks should always be completed as long as the program is running.
+                            </li>
+                        <li>Fault Tolerance: All valid inputs should not be taken, system should report in an error box message when any unexpected crash occurs.
+                            </li>
+                        <li>Security: Unreal engine has been used to build the graphic, it should be safe enough for a game. Saving data has no need to be encrypted as it rarely leads to the crash of a game.
+                            </li>
+                        <li>Safety: The players will not be hurt in our video game even if there are errors or failures.</li>
+                    </ul>
+                    <li>Cost - Since we do not have any sponsors or investors, we do not have any cost except our time and effort.
+                        <ul>
+                            <li>Development Cost: Class, levels, methods should be implemented. Game graphics will be implemented by unreal engine.</li>
+                            <li> Deployment Cost: Unreal engine is free for making non-profit games, so there is no cost for installation. 
+                                </li>
+                            <li>Upgrade Cost: Updates associated with class, levels, methods are considered to be high cost, while changing in GUI and graphic model are comparably low.
+                                </li>
+                            <li>Maintenance Cost: Reporting error message is an approach to monitor buges and keep maintenance. Error or crash could be detected, located, and fixed by specific detailed error report.
+                                </li>
+
+                        </ul>
+
+                        <li>Maintenance   
+                            <ul>
+                                <li>Extensibility: Each class of the system should be separated. Characters and  tubes will have their own class, hence it should be easy to append new functionality/new classes to the system. For example, if developers want to set a new enemy  instance to our game, an enemy class can be created and then link the class to our main game object class.
+                                    </li>
+                                <li>
+                                    Modifiability: It should not be hard to change functionality of our game. We can just go to the class that we want to modify and edit the code.
+                                    
+                                </li>
+                                <li>Adaptability: This program only aims to present as a video game..
+                                    </li>
+
+                                <li>Portability: This program only aims to run on Windows operating system.
+                                    </li>
+                                <li>
+                                    Readability: Comments should be added at every class, function ,method, and levels. Since classes, levels, main are written separately, coding should not be difficult to understand,
+                                    
+                                </li>
+                                <li>Traceability of Requirements: Methods and functions’ name should be specified regarding their purpose, in order to acknowledge the use of a certain function.
+                                </li>
+                            </ul>
+                        
+                        
+                        
+                        
+                        </li>
+
+                        <li>End User Criteria
+
+                            <ul>
+                                <li>Utility: The system is simply used to perform a video game to public view.
+                                </li>
+                                <li>Usability: The users should be able to easily understand how to play the game, since the difficulty of understanding this game is considerably low. Public would easily gain the purpose of this program.
+                                </li>
+
+                            </ul>
+                            </li>
+                        
+                       
+                        </li>
+                         
+                </ul>
+
+            <img src="/images/pipes/getting key.JPG" alt="pipes">
+            <img src="/images/pipes/third_edition.JPG" alt="pipes">
+            <img src="/images/pipes/third_edition_layout.JPG" alt="pipes">
+            <h4>Division of Work:</h4>
+            <ul>
+                <li>David - programming the haskell system, including health parameters, the character, and the movable enemy</li>
+                <li>Divay - menu system and help organized Bitbucket</li>
+                <li>Marcus - lead modeler in Blender, creating pipes and collisions</li>
+                <li>Zimo - lead artist, creating pipes and helping with demo level layout</li>
+                <li>Cheng - key and door systems, try to fix bugs</li>
+                <li>Fiona - lead for Jira, and find sound effects</li>
+            </ul>
+
+
+
+            <p>Your software must have a GUI or web-browser interface. It can run on a PC, a Mac or a portable device (or all of the above). </p>
+
+            <h3>Written Code</h3>
+            <img src="images/pipes/unreal.jpg" alt="A-mazing Game">
+            <img src="images/pipes/blueprint.jpg" alt="A-mazing Game">
+            <img src="images/pipes/b.jpg" alt="A-mazing Game">
+
+            <h4>Video Demo of the Game</h4>
+            <video src="images/pipes/videodemo.mp4" controls>Final game</video>
+
+        </div>
+
+
+        <footer class="footer" id="contactme">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Contact Me</h4>
+                        <ul>
+                            <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
+                            <li><a href="#">Email: zimoyuhu@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>商务合作</h4>
+                        <ul>
+                            <li>电话: (1)-613-913-9362</li>
+                            <li>邮箱: zimoyuhu@gmail.com</li>
+                            <li>微信: xfww77</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow me</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                            <!--
+                            
+                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
+                            <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
+    
+                            -->
+         
+                        </div>
+                            
+      
+                    </div>
+                    <div class="footer-col">
+                        <h4>Other social media</h4>
+                        <ul>
+                            <li><a href="#">微博：兮木鬼鬼</a></li>
+                            <li><a href="#">小红书：兮木鬼鬼</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+    </body>
+</html>

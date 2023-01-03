@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    
+    
+    <section class="hero" id="home">
+    
+            <nav>
+                <img src="images/other/logoxi.PNG" class="logo">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#proj">PROJECTS</a></li>
+                    <li><a href="#dreams">DREAMS</a></li>
+                    <li><a href="#contactme">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="rec">
+                <h3>Welcome to Zimo's Portfolio Website</h1>>
+            </div>
+            <div class="cover">
+                <img src="/images/other/coverimage.JPG" alt="cover">
+            </div>
+
+            <div class="text-box">
+                
+                <h1>Zimo Wu</h1>
+                <p>My name is Zimo Wu. I am a fourth year Computer Science student studying at Queen's University, majoring in Game Development. 
+                    I am from Beijing, China, but I came to Canada in 2017. I spent two years of high school in Ottawa, and moved to Kingston for University.
+                    I am a girl with rich imagination and has a lot of creative ideas. I am super interested in digital media. I think it is a perfect
+                    subject for me as I have a degree in Computer Science, which enriches the technical side, and I have plenty hobbies that are related
+                    to the art and design part of digital media.
+
+                    For example, I made lots of videos in the past few years, including game videos, short films and vlogs. 
+                    I enjoy reading books, drawing and painting. I am also interested in
+                    game design, character design, photography, illustration, and animation.
+                    I believe that everyone is special, and we are the best of the best.
+                </p>
+                <a href="/images/other/resume_Zimo Wu.pdf" target="_blank">View My Resume</a>
+            </div>
+    </section>
+
+    <!--<section class="about">
+        <h1 id="about">About Me</h1>
+        
+        
+    </section>
+    
+    <section class="choose">
+        
+        <h1 id="iam">Artist.</h1>
+        <h1>Programmer.</h1>
+        <h1>Designer</h1>
+
+        
+    </section>-->
+    <section class="projtitle">
+        <h1 id="proj">Previous projects</h1>
+    </section>
+
+    <section class="projects">
+        <div id="buttons">
+            <button class="btn" onclick="filterObjects('all')">Show All</button>
+            <button class="btn" onclick="filterObjects('programming')">Programming</button>
+            <button class="btn" onclick="filterObjects('designs')">Game Designs/Character Designs</button>
+            <button class="btn" onclick="filterObjects('videos')">Vides/Films</button>
+            <button class="btn" onclick="filterObjects('art')">Art</button>
+            <button class="btn" onclick="filterObjects('photos')">Photography</button>
+
+        </div>
+    
+        <div class="objects">
+            <div class="box programming">
+                <a href="gameAI.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
+            </div>
+            <div class="box programming">
+                <a href="depression.html"><img src="images/borealis/LSI Social Graphic – 2_v2.jpg" alt="Borealis AI project"></a>
+            </div>
+            <div class="box programming">
+                <a href="elderwood.html"> <img src="images/elderwood/elderwood.jpg" alt="The Elderwood"></a>
+            </div>
+            <div class="box programming">
+                <a href="pipes.html">
+                    <img src="images/other/pipes.jpg" alt="A-mazing Pipes">
+                </a>
+            </div>
+            
+            <div class="box programming">
+                <a href="#">
+                    <img src="images/other/movies.jpg" alt="School Projects">
+                </a>
+            </div>
+
+            
+            <div class="box programming">
+                <a href="#">
+                    <img src="images/other/personalweb.jpg" alt="Website">
+                </a>
+            </div>
+            
+            <div class="box videos">
+                <a href="#">
+                <img src="images/other/weibo.jpg" alt="videos">
+                </a>
+            </div>
+            <div class="box designs">
+                <a href="filmweb.html">
+                    <img src="images/other/film.jpg" alt="Film essay web">
+                </a>
+            </div>
+            
+            
+            <div class="box designs">
+                <a href="#">
+                <img src="images/other/bear.jpg" alt="Teddy bear">
+                </a>
+            </div>
+
+            
+            <div class="box videos">
+                <a href="video.html">
+                    <img src="images/other/asus.jpeg" alt="Videos">
+                </a>
+            </div>
+            <div class="box designs">
+                <a href="design.html">
+                    <img src="images/other/1.jpeg" alt="Videos">
+                </a>
+            </div>
+            <div class="box programming">
+                <a href="architecture.html">
+                    <img src="images/other/software.jpg" alt="Website">
+                </a>
+                
+            </div>
+        
+        <div class="box photos">
+            <a href="#">
+                <img src="images/other/cover.jpeg" alt="photography">
+            </a>
+        </div>
+            
+
+        <div class="box photos">
+            <a href="#">
+            <img src="images/other/cover.jpeg" alt="photography">
+            </a>
+        </div>
+            
+            
+            
+
+            
+            
+    </div>
+            
+        
+    </section>
+    
+    <footer class="footer" id="contactme">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
+                        <li><a href="#">Email: zimoyuhu@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>商务合作</h4>
+                    <ul>
+                        <li>电话: (1)-613-913-9362</li>
+                        <li>邮箱: zimoyuhu@gmail.com</li>
+                        <li>微信: xfww77</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow me</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                        
+                        <!--
+                        <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                        <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
+
+                        -->
+     
+                    </div>
+                        
+  
+                </div>
+                <div class="footer-col">
+                    <h4>Other social media</h4>
+                    <ul>
+                        <li><a href="#">微博：兮木鬼鬼</a></li>
+                        <li><a href="#">小红书：兮木鬼鬼</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Zimo's personal portfolio website. This subpage contains the Borealis Project.">
+        <title>Depression</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="hero">
+
+            <nav>
+                <img src="images/other/logoxi.png" class="logo">
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#proj">PROJECTS</a></li>
+                    <li><a href="index.html#dreams">DREAMS</a></li>
+                    <li><a href="#contactme">CONTACT</a></li>
+                </ul>
+                
+                
+            </nav>
+
+            <div class="rec">
+                <h3>Welcome to Zimo's Portfolio Website</h1>>
+            </div>
+           
+
+            <div class="text-box">
+                    <h1>Borealis AI</h1>
+                    <h2>"Let's Solve it!" program</h2>
+
+                <h4>Forecasting the depression level through 500 Reddit posts</h4>
+                
+                <p>
+                    This is a project that I've done in the Let's Solve it program(2021) at Borealis AI.
+                    Our group used a dataset containing 500 redditors' posts from reddit r/depression with depression 
+                    classification developed by psychiatrists. By preprocessing the dataset, cross validation, training 
+                    and testing the model, we want to predict the depression level and risk of suicide through textual posts.
+                    We used Python for the project and built four models to forecast the depression level.
+                    We checked our results with research papers that used the same dataset.
+                </p>
+                <a href="https://github.com/Caroline-xu/QWQ" target="_blank">View repository</a>
+
+                </p>
+                
+                    
+            </div>
+
+            
+                
+            <div class="image">
+                <img src="/images/borealis/title.jpg", alt="ppt">
+            </div>
+
+            
+            
+        </section>
+        <div class="bot">
+            <h3>Welcome to Zimo's Portfolio Website</h1>>
+        </div>
+
+        <section class="introduce">
+            <div class="text-box4">
+                
+
+                <div class="links">
+                    <a href="images/borealis/Slides - Depression Prediction in Social Media.pdf" target="_blank">View Slides</a>
+                    <a href="images/borealis/Short Summary - Forecast Depression Level and Risk of Suicide.pdf" target="_blank">View Short Summary</a>
+                    <a href="images/borealis/White Paper - Forcasting Depression Level and Suicidal Risk - .pdf" target="_blank">View White Paper</a>
+                    <a href="https://docs.google.com/document/d/1ywoo7DtWBgx5apN1SrhX92jk_QdJDh5seLADxCRGD4w/edit?usp=sharing" target="_blank">View Report</a>
+    
+                </div>
+                <h1>Process</h1>
+
+                <img src="images/borealis/1.jpg" alt="borealis project">
+                <h4>Choosing the Dataset</h3>
+                <p>We found many dataset on depression, but we eventually agree on the Reddit C-SSRS dataset.
+                    The C-SSRS dataset contains 500 Reddit posts from the subreddit r/depression. These posts 
+                    are labeled by psychologists on a five point scale according to guidelines established in 
+                    the Columbia Suicide Severity Rating Scale, which progress according to severity of depression. 
+                    As this dataset is clinically verified and labeled, it is an adequate dataset to validate the 
+                    label correction method, especially since it is from the same domain of mental health.
+                    Before we've done the research, we knew that depression is a serious problem in our lives, but we
+                    did not expect that there are people seeking for help using Reddit posts. The dataset was interesting,
+                    which inspired us to build models on these Reddit posts to predict depression level and help the society.
+                </p>
+                <img src="images/borealis/2.jpg" alt="borealis project">
+                <!--<img src="images/borealis/posts.jpg" alt="borealis project">    -->
+                <h4>There are five different labels in the dataset.</h4>
+                <img src="images/borealis/datasetexplain.jpg" alt="borealis project">     
+                <img src="images/borealis/4.jpg" alt="borealis project">
+                <p>We also generated word clouds for each label to find the most frequent word in the Reddit posts.</p>
+                <img src="images/borealis/wordcloud.jpg" alt="borealis project">
+                <h4>Methods</h3>
+                <p>We started our implementation by data preprocessing. We tokenized sentences to words from the original
+                    dataset.Then, we removed punctuations and change uppercase to lowercase from posts. After
+                    that, we used lemmatization and stemming to get an organized dataset. The second step was
+                    feature extraction. We used TF-IDF (term
+                    frequency-inverse document frequency), word frequency, n-gram, sentiment feature
+                    extraction, exclamation marks extraction, problem marks extraction, and capitalized letters
+                    extraction. We got many useful features. Then, we splited the dataset into
+                    five sets for five fold cross-validation, 80% data was used to train the model, and 20% data was used
+                    to test the model. Finally, we chose four different models to train our data, which are Linear Regression,
+                    Naive Bayes, Decision Tree, and Random Forest. We chose the best fit from these
+                    four models.</p>
+                <img src="images/borealis/6.jpg" alt="borealis project">
+                <h4>Results</h3>
+                <img src="images/borealis/simple.jpg" alt="borealis project">
+                <img src="images/borealis/7.jpg" alt="borealis project">
+                <img src="images/borealis/8.jpg" alt="borealis project">
+                
+                <p>
+                    We got a dummy classifier score of 0.23. DummyClassifier is a classifier that makes
+predictions using simple rules. It can be used as a baseline to compare with real classifiers.
+Then, we used PCA, max feature and grid search to generate our results. Max feature is
+creating a feature matrix out of the most given number of frequent words across text
+documents. While using PCA to reduce dimensions to 300, we found that the linear
+regression model has the lowest accuracy, and the random forest model has the highest
+accuracy, shown in Table 1. Then, we tried to use max-feature and grid search. When we set
+the max feature value to 20 and apply grid search to random forest and decision tree, the
+accuracy for random forest and decision tree are high and close to each other, which means
+that both models perform well when the max feature is 20. When we set the max feature to 50
+and use grid search for the last two models, the f1 score for random forest is the highest.
+Similarly, if we set the max feature to 100, we found that the random forest model still has
+the highest f1 scores. Therefore, the random forest model has the best performance among 4
+models, but the decision tree’s accuracy will approach the random forest or even be higher,
+when we have a small max feature value. The linear regression model has low scores for all
+the four cases. 
+
+                </p>
+                <img src="images/borealis/paper.jpg" alt="borealis project">
+                <p>
+                    Furthermore, our group found a paper called Suicidal risk identification in social media that was published this year and used
+the same dataset we used. We got 0.37 (Micro F1) and 0.30 (Weighted F1), which is higher
+than the best result in this paper. However, one way to get a better performance on this
+dataset can be having more data. The current dataset has 500 data points with 5 labels.
+Increasing the number of datapoints can lead to better model predictions.
+                     
+                </p>
+
+                <img src="images/borealis/11.jpg" alt="borealis project">
+                <p>
+                    In the application, we can let the user enter a social media address or username, and it
+will then automatically capture the user's social media posts and give their level of
+depression. This model can help people who are concerned that they may be depressed. If the
+classification results indicate the possibility of depression, then the user is advised to go to
+the hospital for further treatment and seek professional advice from their doctor.
+This model could help to support doctors in making more structured decisions. Currently, the
+clinical diagnosis of depression is based on the ICD-10 or DSM-V diagnostic criteria for
+depression, combined with patient interviews, scales and physician experience.
+This approach is only applicable to one-on-one testing and can easily lead to
+misdiagnosis due to subjective factors such as patient cooperation and physician proficiency.
+Due to the lack of patient awareness and early screening tools, patients may have reached
+major depression after treatment.
+Therefore, we hope to use this model as an early screening tool to detect depression as
+early as possible rather than discover depression in the late stage.
+                </p>
+                
+            
+                <h4>Written Code</h3>
+                    <img src="images/borealis/code1.jpg" alt="borealis project">
+                    <img src="images/borealis/code2.jpg" alt="borealis project">
+                    <img src="images/borealis/code3.jpg" alt="borealis project">
+                    <h3>Output of our program</h3>
+                    <img src="images/borealis/C1.jpg" alt="borealis project">
+                    <img src="images/borealis/C2.jpg" alt="borealis project">
+                    <img src="images/borealis/C3.jpg" alt="borealis project">
+                    
+        
+            
+            </div>
+        </section>
+
+
+        <footer class="footer" id="contactme">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Contact Me</h4>
+                        <ul>
+                            <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
+                            <li><a href="#">Email: zimoyuhu@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>商务合作</h4>
+                        <ul>
+                            <li>电话: (1)-613-913-9362</li>
+                            <li>邮箱: zimoyuhu@gmail.com</li>
+                            <li>微信: xfww77</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow me</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                            <!--
+                            
+                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
+                            <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
+    
+                            -->
+         
+                        </div>
+                            
+      
+                    </div>
+                    <div class="footer-col">
+                        <h4>Other social media</h4>
+                        <ul>
+                            <li><a href="#">微博：兮木鬼鬼</a></li>
+                            <li><a href="#">小红书：兮木鬼鬼</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+    </body>
+</html>
