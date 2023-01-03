@@ -39,7 +39,7 @@
                 
             </div>
             <div class="image">
-                <img src="/images/gameAI/dungeon.jpg", alt="game AI">
+                <img src="images/gameAI/dungeon.jpg", alt="game AI">
             </div>
             
             
@@ -85,8 +85,8 @@
                         move away from an object. “Evade” actions make the player
                         move perpendicular to the
                         direction an object is moving</p>
-                    <img src="/images/gameAI/void.jpg", alt="avoid evade">
-                    <img src="/images/gameAI/enemy.jpg", alt="proximity">
+                    <img src="images/gameAI/void.jpg", alt="avoid evade">
+                    <img src="images/gameAI/enemy.jpg", alt="proximity">
                 </ul>
 
                 <h3>Conditionals</h3>
@@ -114,23 +114,23 @@
 
                 <div class="text-box2">
                     <h4>Written Code</h4>
-                        <img src="/images/gameAI/conditional.jpg", alt="conditional">
-                        <img src="/images/gameAI/sequence.jpg", alt="conditional">
-                        <img src="/images/gameAI/selector.jpg", alt="conditional">
-                        <img src="/images/gameAI/failure.jpg", alt="conditional">
-                        <img src="/images/gameAI/success.jpg", alt="conditional">
-                        <img src="/images/gameAI/not.jpg", alt="conditional">
+                        <img src="images/gameAI/conditional.jpg", alt="conditional">
+                        <img src="images/gameAI/sequence.jpg", alt="conditional">
+                        <img src="images/gameAI/selector.jpg", alt="conditional">
+                        <img src="images/gameAI/failure.jpg", alt="conditional">
+                        <img src="images/gameAI/success.jpg", alt="conditional">
+                        <img src="images/gameAI/not.jpg", alt="conditional">
             
 
                     <div class="behaviour">
                         <h4>I created 11 Composite behaviours for my behaviour tree, including the default “Win” behaviour.</h4>
-                        <img src="/images/gameAI/win.jpg", alt="conditional">
+                        <img src="images/gameAI/win.jpg", alt="conditional">
                         <p>GetKey is a Composite behaviour that gets the key. It runs through a sequence: if there is a key available, the character will move to the closest key.</p>
-                        <img src="/images/gameAI/getkey.jpg", alt="conditional">
+                        <img src="images/gameAI/getkey.jpg", alt="conditional">
                         <p>GetGun is a Composite behaviour that gets the gun. It runs through a sequence: if there is a gun available, the character will move to the closest gun.</p>
-                        <img src="/images/gameAI/getgun.jpg", alt="conditional">
+                        <img src="images/gameAI/getgun.jpg", alt="conditional">
                         <p>ShootEnemy is a Composite behaviour that targets and shoots the enemy. It runs through a sequence: if the gun is not out of ammo, which means that it will always succeed the condition “canShoot”, it targets the closest enemy and shoot.</p>
-                        <img src="/images/gameAI/shootenemy.jpg", alt="conditional">
+                        <img src="images/gameAI/shootenemy.jpg", alt="conditional">
                         <p>DetectEnemy is a Composite behaviour that detects enemy attack and try to avoid them. It uses a selector to select through four sequences. The first sequence represents when the enemy is far from the character. The character shoots the enemy by calling the Composite ShootEnemy, and then avoids the closest enemy. The second sequence is when the enemy is close. The character evades the closest enemy first, and then shoots the enemy. The third sequence is when the enemy is in the danger zone. The character evades the closest enemy, and shoots the enemy. Finally, the last sequence represents that the character will shoot the enemy when they are under attack.
                             I chose different methods for the character to avoid/evade/kill the enemies, because when the enemy is far, the character has time to shoot the enemy, but when the enemies are close to the character, the character should move away from the enemy first(move to a safer position), and then try to kill them.
                             </p>
