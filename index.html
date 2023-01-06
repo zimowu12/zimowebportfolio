@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal web</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
@@ -35,14 +38,12 @@
                 <h1>Zimo Wu</h1>
                 <p>My name is Zimo Wu. I am a fourth year Computer Science student studying at Queen's University, majoring in Game Development. 
                     I am from Beijing, China, but I came to Canada in 2017. I spent two years of high school in Ottawa, and moved to Kingston for University.
-                    I am a girl with rich imagination and has a lot of creative ideas. I am super interested in digital media. I think it is a perfect
-                    subject for me as I have a degree in Computer Science, which enriches the technical side, and I have plenty hobbies that are related
-                    to the art and design part of digital media.
+                    I am a girl with rich imagination and has a lot of creative ideas. I am interested in digital media as my maor and my hobbies both 
+                    fall into that category.
 
-                    For example, I made lots of videos in the past few years, including game videos, short films and vlogs. 
-                    I enjoy reading books, drawing and painting. I am also interested in
+                    For example, I made lots of videos in the past few years, including game videos, music videos and vlogs. 
+                    I enjoy reading books, drawing and painting. I also have some experiences in
                     game design, character design, photography, illustration, and animation.
-                    I believe that everyone is special, and we are the best of the best.
                 </p>
                 <a href="images/other/resume_Zimo Wu.pdf" target="_blank">View My Resume</a>
             </div>
@@ -63,11 +64,8 @@
 
         
     </section>-->
-    <section class="projtitle">
-        <h1 id="proj">Previous projects</h1>
-    </section>
-
     <section class="projects">
+        <h1 id="proj">Previous projects</h1>
         <div id="buttons">
             <button class="btn" onclick="filterObjects('all')">Show All</button>
             <button class="btn" onclick="filterObjects('programming')">Programming</button>
@@ -83,33 +81,46 @@
         <div class="objects">
             <div class="box programming">
                 <a href="gameAI.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
-                <h5>Behaviour Tree AI</h5>
-                <h6>Unity, 2022</h6>
+                <h5>Behaviour Tree AI: Creating a game AI using Unity</h5>
+                <h3>Coding in c#, drawing behaviour tree with the behaviour tree editor</h3>
+                <h6>2022 Fall</h6>
             </div>
             <div class="box programming">
                 <a href="depression.html"><img src="images/borealis/LSI Social Graphic – 2_v2.jpg" alt="Borealis AI project"></a>
-                <h5>Forecast Depression Level</h5>
-                <h6>Python, 2021</h6>
+                <h5>Forecast Depression Level using data from Reddit posts</h5>
+                <h3>Coding with Python and Python Libraries, Borealis AI: Let's Solve It! program</h3>
+                <h6>2021 Fall</h6>
             </div>
             <div class="box programming">
                 <a href="elderwood.html"> <img src="images/elderwood/elderwood.jpg" alt="The Elderwood"></a>
-                <h5>The Elderwood</h5>
-                <h6>Unity, 2021</h6>
+                <h5>The Elderwood: A 2D simulation puzzle game to tame animals</h5>
+                <h3>Designing a novel game, coding with c# in Unity</h3>
+                <h6>2021 Winter</h6>
             </div>
             <div class="box programming">
                 <a href="pipes.html">
                     <img src="images/other/pipes.jpg" alt="A-mazing Pipes">
                 </a>
-                <h5>A-mazing Pipes</h5>
-                <h6>Unreal Engine 4, 2021</h6>
+                <h5>A-mazing Pipes: A 2.5D shooter game made with Unreal Engine 4</h5>
+                <h3>Coding with C++, using the construction script to change shapes of the pipes</h3>
+                <h6>2021 Fall</h6>
             </div>
             
             <div class="box programming">
                 <a href="#">
                     <img src="images/other/movies.jpg" alt="School Projects">
                 </a>
-                <h5>Movie</h5>
-                <h6>Unity, 2020</h6>
+                <h5>Browsing Movies</h5>
+                <h6>2021 Winter</h6>
+            </div>
+
+            <div class="box programming">
+                <a href="#">
+                    <img src="images/other/movies.jpg" alt="School Projects">
+                </a>
+                <h5>Baseball Modeling Project</h5>
+                <h3></h3>
+                <h6>2020 Fall</h6>
             </div>
 
             
@@ -117,17 +128,26 @@
                 <a href="#">
                     <img src="images/other/personalweb.jpg" alt="Website">
                 </a>
+                <h5>Personal Website: The version changes of this website</h5>
+                <h3>Coding in HTML, CSS, JavaScript, using GitHub Pages</h3>
+                <h6>2022 Summer - 2023 Winter</h6>
             </div>
             
             <div class="box videos">
                 <a href="#">
                 <img src="images/other/weibo.jpg" alt="videos">
                 </a>
+                <h5>Game videos: total of 66K views on Weibo and TikTok</h5>
+                <h3>Videos about the game Sky</h3>
+                <h6>2020 Winter - 2022 Summer</h6>
             </div>
             <div class="box designs">
-                <a href="filmweb.html">
+                <a href="https://18zw108.wixsite.com/researchproject">
                     <img src="images/other/film.jpg" alt="Film essay web">
                 </a>
+                <h5>Reediting and Interactive films: Creating Interactions for Audience through Database Cinema</h5>
+                <h3>A film course essay in a web format made using wix.com</h3>
+                <h6>2021 Summer</h6>
             </div>
             
             
@@ -135,33 +155,54 @@
                 <a href="#">
                 <img src="images/other/bear.jpg" alt="Teddy bear">
                 </a>
+                <h5>Teddy: the Design of a 2D puzzle platformer game</h5>
+                <h3>A game idea that I came up with, the design of the story and characters, implementing
+                    with Unity (In progress)
+                </h3>
+                <h6>2022 Summer - now</h6>
             </div>
 
-            
-            <div class="box videos">
-                <a href="video.html">
-                    <img src="images/other/asus.jpeg" alt="Videos">
-                </a>
-            </div>
+        
             <div class="box designs">
                 <a href="design.html">
                     <img src="images/other/1.jpeg" alt="Videos">
                 </a>
+                <h5>Onigiri: A 2D puzzle game idea</h5>
+                <h3>Game design, rules of game, character designs, UI</h3>
+                <h6>2021 Fall</h6>
             </div>
             <div class="box programming">
-                <a href="architecture.html">
+                <a href="https://github.com/judepowerful/cisc322">
                     <img src="images/other/software.jpg" alt="Website">
                 </a>
-                
+                <h5>Anaylze the software architecture of the 
+                    automobile Apollo in three parts: Conceptual, concrete, and enhancement proposa
+                </h5>
+                <h3>View GitHub repository for the slides and report displayed using GitHub Pages</h3>
+                <h6>2021 Winter</h6>
             </div>
         
+            <div class="box videos">
+                <a href="#">
+                    <img src="images/other/asus.jpeg" alt="videos">
+                </a>
+                <h5>Videography</h5>
+                <h3>Shot on Cannon 750d, iPhone X, iPhone 13</h3>
+                <h6>recent years</h6>
+            </div>
+
         <div class="box photos">
             <a href="#">
                 <img src="images/other/cover.jpeg" alt="photography">
             </a>
+            <h5>Photography</h5>
+            <h3>Cannon 750d, iPhone X, iPhone 13</h3>
+            <h6>recent years</h6>
         </div>
-            
 
+        
+            
+<!--
         <div class="box photos">
             <a href="#">
             <img src="images/other/cover.jpeg" alt="photography">
@@ -169,7 +210,7 @@
         </div>
             
             
-            
+         -->   
 
             
             
@@ -177,11 +218,11 @@
             
         
     </section>
-
+<!--
     <section class="projtitle">
         <h2>Previous projects</h2>
     </section>
-    
+    -->
     <footer class="footer" id="contactme">
         <div class="container">
             <div class="row">

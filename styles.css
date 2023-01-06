@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
 :root{
     --fs-xl: 3rem;
     --fs-600: 2rem;
@@ -43,7 +44,7 @@ body{
 .hero{
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: rgb(251, 242, 242);
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -53,7 +54,7 @@ body{
 
 nav{
     width: 100%;
-    height: 10%;
+    height: 8%;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,7 +64,7 @@ nav{
     justify-content: space-between;
     z-index: 100000;
     border: #635551;
-    opacity: 70%;
+    background-color: white;
 
 }
 
@@ -90,22 +91,23 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(27, 26, 26);
-    font-weight: bold;
+    color: rgb(191, 150, 173);
 }
 
 .rec{
     width: 100%;
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 0;
     padding: 1% 8%;
     display: flex;
     align-items: center;
+    justify-content: left;
     /* make the rectangle above body z-index: 100000;*/
     /*background-color: rgb(130, 75, 75);
     */
-    background-color: #62837f;
+    background-color: rgb(191, 150, 173);
+    /*#62837f;*/
 }
 
 .rec h3{
@@ -113,13 +115,26 @@ nav ul li a:hover{
     font-size: var(--fs-100);
 }
 
+@media(max-width: 800px){
+    .rec{
+        top: 5%;
+    }
+}  
+
+@media(min-width: 960px){
+    .rec{
+        top: 7%;
+    }
+}  
+
 
 
 .projects{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #62837f;
+    background-color: white;
+    margin-bottom: 5em;
     /*max-width: 50%;
     justify-content: center;
     text-align: center;
@@ -128,17 +143,26 @@ nav ul li a:hover{
     flex-flow: wrap;*/
 }
 
+.projects h1{
+    font-size: 30px;
+    align-items: center;
+    -webkit-text-fill-color: rgb(43, 42, 42);
+    cursor: pointer;
+    transition: transform 0.5s;
+    text-align: center;
+    padding: 50px;
+}
+
 .box{
     float: left;
-    background-color: #eaeaea;
     text-align: center;
-    margin: 0.8em;
+    background-color: rgb(255, 255, 255);
     display: none;
     width: 20rem;
-    height: 19.6rem;
+    height: 21rem;
     opacity: 90%;
-    margin-left: 2rem;
-
+    margin: 2%;
+    
 }
 
 
@@ -150,13 +174,13 @@ nav ul li a:hover{
     
     border: none;
     outline: none;
-    background-color: #a9cebd;
+    background-color: rgb(191, 150, 173);
     cursor: pointer;
     margin: 0.2em;
     border-radius: 5px;
     padding: 0.5em 0.9em;
-    font-size: var(--fs-300);
-    color:#1f2022;
+    font-size: 1em;
+    color:#fafcff;
     text-align: center;
 }   
 
@@ -164,28 +188,30 @@ nav ul li a:hover{
     background-color: rgb(246, 201, 201);
 }
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
     .btn {
         width: 20%;
         margin-bottom: 2%;
+        font-size: 0.8em;
         
     }
 }
 
-@media(max-width: 574px){
+@media(max-width: 630px){
     .btn{
         width: 20%;
+        font-size: 0.5em;
     }
 }  
-
+/*
 .projtitle{
-    background-color: #62837f;
+    background-color: rgb(251, 242, 242);
 }
 
 .projtitle h1{
     font-size: 30px;
     align-items: center;
-    -webkit-text-fill-color: rgb(253, 238, 238);
+    -webkit-text-fill-color: rgb(43, 42, 42);
     cursor: pointer;
     transition: transform 0.5s;
     text-align: center;
@@ -198,14 +224,13 @@ nav ul li a:hover{
     height: 20vh;
     color: #62837f;
     display: fixed;
-}
+}*/
 
 .projects img{
-    /*box-shadow: 0 10px 20px #414979;*/
-    border-radius: 10px;
-    width: 290px;
-    height: 170px;
-    margin-top: 35px;
+    /*box-shadow: 0 10px 20px #414979;
+    border-radius: 10px;*/
+    width: 20rem;
+    height: auto;
 }
 
 .box:hover{
@@ -220,15 +245,26 @@ nav ul li a:hover{
 }
 
 .box h5{
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
-    padding: 8px 10%;
+    padding: 0.2em 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.box h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: left;
 }
 
 .box h6{
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     padding: 0 10%;
     text-align: right;
+    font-weight: 300;
 }
 
 
@@ -239,6 +275,8 @@ nav ul li a:hover{
     vertical-align: middle;
     /*margin-left: 5%;
     margin-top: 18%;*/
+    margin-left: 2em;
+    margin-bottom: 7rem;
 }   
 
 
@@ -266,9 +304,9 @@ nav ul li a:hover{
     text-decoration: none;
     color: #fff;
     background: #3f51b5;
-    padding: 10px 30px;
+    padding: 0.8em 1em;
     font-size: var(--fs-300);
-    margin-top: 50px;
+    margin-top: 2em;
     border-radius: 6px;
 }
 
