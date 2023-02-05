@@ -11,7 +11,7 @@
 @media (min-width: 60em){
     :root{
         --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
-        --fs-600: 3rem;
+        --fs-600: 2.7rem;
         --fs-400: 1.125rem;
         --fs-300: 1rem;
         --fs-100: 0.8rem
@@ -111,13 +111,13 @@ nav ul li a:hover{
 
 @media(max-width: 800px){
     .rec{
-        top: 5%;
+        top: 14%;
     }
 }  
 
 @media(min-width: 960px){
     .rec{
-        top: 7%;
+        top: 10%;
     }
 }  
 
@@ -143,7 +143,7 @@ nav ul li a:hover{
 }
 
 .text-box p{
-    font-size: var(--fs-400);
+    font-size: var(--fs-100);
 }
 
 .text-box h4{
@@ -163,11 +163,11 @@ nav ul li a:hover{
     border-radius: 6px;
 }
 
-.text-box img{
+.image img{
     box-shadow: 0 10px 20px whitesmoke;
     border-radius: 25px;
     display: inline-block;
-    max-width: 100%;
+    max-width: 90%;
     margin-top: 170px;
 }
 
