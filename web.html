@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Zimo's personal portfolio website. This subpage contains the game AI assignment.">
+        <title>Projects</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="style/subpage.css">
+    </head>
+    <body>
+        <section class="hero">
+
+            <nav>   
+                <img src="images/other/logoxi.png" class="logo">             
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#proj">PROJECTS</a></li>
+                    <li><a href="index.html#dreams">DREAMS</a></li>
+                    <li><a href="#contactme">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="rec">
+                <h3>Welcome to Zimo's Portfolio Website</h1>>
+            </div>
+
+            <div class="text-box">
+                    <h1>Personal Website</h1>
+
+                <h4>The implementation of this portfolio website</h4>
+                
+                <p>
+                    I self-learned html and css to implement this website. It was my first time coding a website, so 
+                    I've been through many struggles, but eventually I overcame the difficulties and complete this website.
+                    The website will be continuously updating.
+
+                </p>
+
+                <a href="index.html" target="_blank">Home Page</a>
+
+                
+            </div>
+            <div class="image">
+                <img src="images/other/personalweb.jpg", alt="web">
+            </div>
+            
+            
+        </section>
+        <div class="bot">
+            <h3>Welcome to Zimo's Portfolio Website</h1>>
+        </div>
+
+        <section class="introduce">
+
+            <div class="text-box4">
+                <h1>Implementation Process</h1>
+                <p>
+                </p>
+
+                <img src="images/website/version3.0.png">
+                <img src="images/website/version3.0.1.png">
+                <img src="images/website/version3.1.png">
+                
+                        
+            </div>
+
+                <div class="text-box2">
+                    <h4>Written Code</h4>
+                        <img src="images/gameAI/conditional.jpg", alt="conditional">
+                        <img src="images/gameAI/sequence.jpg", alt="conditional">
+                        <img src="images/gameAI/selector.jpg", alt="conditional">
+                        <img src="images/gameAI/failure.jpg", alt="conditional">
+                        <img src="images/gameAI/success.jpg", alt="conditional">
+                        <img src="images/gameAI/not.jpg", alt="conditional">
+            
+
+                    <div class="behaviour">
+                        <h4>I created 11 Composite behaviours for my behaviour tree, including the default “Win” behaviour.</h4>
+                        <img src="images/gameAI/win.jpg", alt="conditional">
+                        <p>GetKey is a Composite behaviour that gets the key. It runs through a sequence: if there is a key available, the character will move to the closest key.</p>
+                        <img src="images/gameAI/getkey.jpg", alt="conditional">
+                        <p>GetGun is a Composite behaviour that gets the gun. It runs through a sequence: if there is a gun available, the character will move to the closest gun.</p>
+                        <img src="images/gameAI/getgun.jpg", alt="conditional">
+                        <p>ShootEnemy is a Composite behaviour that targets and shoots the enemy. It runs through a sequence: if the gun is not out of ammo, which means that it will always succeed the condition “canShoot”, it targets the closest enemy and shoot.</p>
+                        <img src="images/gameAI/shootenemy.jpg", alt="conditional">
+                        <p>DetectEnemy is a Composite behaviour that detects enemy attack and try to avoid them. It uses a selector to select through four sequences. The first sequence represents when the enemy is far from the character. The character shoots the enemy by calling the Composite ShootEnemy, and then avoids the closest enemy. The second sequence is when the enemy is close. The character evades the closest enemy first, and then shoots the enemy. The third sequence is when the enemy is in the danger zone. The character evades the closest enemy, and shoots the enemy. Finally, the last sequence represents that the character will shoot the enemy when they are under attack.
+                            I chose different methods for the character to avoid/evade/kill the enemies, because when the enemy is far, the character has time to shoot the enemy, but when the enemies are close to the character, the character should move away from the enemy first(move to a safer position), and then try to kill them.
+                            </p>
+                        <img src="images/gameAI/detectenemy.jpg", alt="conditional">
+                        <p>DetectBullets is a Composite behaviour that detects and avoids the bullets. It runs through a sequence: if the bullet is imminent, it will select whether to the evade the closest bullet or avoid the closest bullet.</p>
+                        <img src="images/gameAI/detectbullets.jpg", alt="conditional">
+                        <p>CheckHealth is a Composite Behaviour that checks the character’s health status. When the health of the character is low and the health is available, the character will move to the closest health. I did not let the character moves to the health when the health is not full, because in that case, the character will get all the health even if it has a about full health status, which will be a waste of time and resources.</p>
+                        <img src="images/gameAI/checkhealth.jpg", alt="conditional">
+                        <p>GetAmmo is a Composite behaviour that makes the character moves to the closest ammo when the gun is out of ammo and ammo is available.</p>
+                        <img src="images/gameAI/getammo.jpg", alt="conditional">
+                        <p>CollectItems is a Composite behaviour that makes the character moves to the closest item when the item is available.</p>
+                        <img src="images/gameAI/collectitems.jpg", alt="conditional">
+                        <p>SafeDistanceWithEnemy is a Composite behaviour that runs through three sequences. It checks the three conditions of the character’s and the enemies’ positions. It makes the character runs away from the enemies in all the three conditions.</p>
+                        <img src="images/gameAI/safedistance.jpg", alt="conditional">
+                        <p>RunFromEnemy is a Composite behaviour that uses a selector. It lets the character chooses to avoid the closest enemy or evade it.</p>
+                        <img src="images/gameAI/runfrom.jpg", alt="conditional">
+                    </div>
+
+                </div>
+                
+                
+            
+
+            
+        
+            
+        </section>
+        <div class="bot">
+            <h3>Welcome to Zimo's Portfolio Website</h1>>
+        </div>
+
+        <footer class="footer" id="contactme">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Contact Me</h4>
+                        <ul>
+                            <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
+                            <li><a href="#">Email: zimoyuhu@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>商务合作</h4>
+                        <ul>
+                            <li>电话: (1)-613-913-9362</li>
+                            <li>邮箱: zimoyuhu@gmail.com</li>
+                            <li>微信: xfww77</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow me</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                            <!--
+                            
+                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
+                            <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
+    
+                            -->
+         
+                        </div>
+                            
+      
+                    </div>
+                    <div class="footer-col">
+                        <h4>Other social media</h4>
+                        <ul>
+                            <li><a href="#">微博：兮木鬼鬼</a></li>
+                            <li><a href="#">小红书：兮木鬼鬼</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+
+    </body>
+</html>
