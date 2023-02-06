@@ -165,19 +165,6 @@ nav ul li a:hover{
     border-radius: 6px;
 }
 
-.intro a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background: #3f51b5;
-    padding: 0.8em 1em;
-    font-size: var(--fs-300);
-    margin-top: 2em;
-    margin-left: 10em;
-    border-radius: 6px;
-    text-align: center;
-    justify-content: center;
-}
 
 .text-box img{
     box-shadow: 0 10px 20px whitesmoke;
