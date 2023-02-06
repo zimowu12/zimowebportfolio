@@ -462,7 +462,8 @@ nav ul li a:hover{
 .text-box4 p{
     font-size: var(--fs-300);
     color: rgb(53, 61, 92);
-    margin: 100px;
+    margin-left: 4em;
+    margin-bottom: 2em;
 }
 
 .text-box4 h3{
@@ -494,6 +495,7 @@ nav ul li a:hover{
     margin-bottom: 2em;
     text-align: center;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .links{
@@ -522,7 +524,7 @@ nav ul li a:hover{
 .text-box4 video{
     margin-left: 10em;
     width: 50em;
-    margin-bottom: 10em;
+    margin-bottom: 1em;
 }
 
 .image video{
