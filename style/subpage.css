@@ -245,7 +245,7 @@ nav ul li a:hover{
 }
 
 .text-box2 img{
-    width: 950px;
+    width: 43em;
     margin-left: 7em;
     justify-content: center;
     text-align: center;
@@ -253,8 +253,8 @@ nav ul li a:hover{
 
 .text-box3{
     background-color: #f7efef;
-    max-width: 1400px;
-    margin-left: 130px;
+    max-width: 80em;
+    margin-left: 6em;
     padding: 80px;
     
 }
@@ -280,11 +280,11 @@ nav ul li a:hover{
 }
 
 .text-box3 img{
-    border-radius: 25px;
+    margin-left: 1em;
     display: inline-block;
-    width: 500px;
+    width: 13em;
     text-align: center;
-    padding: 50px;
+    justify-content: center;
 }
 
 .text-box3 p{
@@ -484,7 +484,7 @@ nav ul li a:hover{
 }
 
 .text-box4 img{
-    width: 50em;
+    width: 47em;
     margin-left: 9em;
     margin-bottom: 2em;
     text-align: center;
@@ -566,6 +566,11 @@ nav ul li a:hover{
         height: 20em;
         margin-left: 5em;
     }
+    .text-box2 img{
+        width: 30em;
+        height: 20em;
+        margin-left: 5em;
+    }
 }
 
 @media(max-width: 40em){
@@ -588,6 +593,11 @@ nav ul li a:hover{
         
     }
     .image img{
+        width: 15em;
+        height: 10em;
+        margin-left: 5em;
+    }
+    .text-box2 img{
         width: 15em;
         height: 10em;
         margin-left: 5em;
