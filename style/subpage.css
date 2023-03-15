@@ -270,19 +270,19 @@ nav ul li a:hover{
 }
 
 .text-box3 h1{
-    font-size: 50px;
+    font-size: var(--fs-600);
     color: rgb(29, 27, 31);
     padding: 150px;
 }
 
 .text-box3 h3{
-    font-size: 30px;
+    font-size: var(--fs-400);
     color: rgb(28, 27, 27);
     padding: 50px;
 }
 
 .text-box3 ul{
-    font-size: 20px;
+    font-size: var(--fs-300);
     color: rgb(28, 27, 27);
     margin-left: 100px;
     margin-right: 100px;
@@ -298,7 +298,7 @@ nav ul li a:hover{
 }
 
 .text-box3 p{
-    font-size: 20px;
+    font-size: var(--fs-300);
     color: rgb(28, 27, 27);
     margin-left: 50px;
     margin-right: 100px;
@@ -479,6 +479,7 @@ nav ul li a:hover{
     color: rgb(53, 61, 92);
     margin-left: 4em;
     margin-bottom: 2em;
+    margin-right: 4em;
 }
 
 .text-box4 h3{
