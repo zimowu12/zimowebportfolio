@@ -198,7 +198,17 @@ nav ul li a:hover{
     margin-left: 10em;
     width: 40em;
 }
+.gif img{
+    display: inline-block;
+    margin-left: 10em;
+    width: 30em;
+    margin-top: 5em;
+}
  
+.pp p{
+    margin-top: 3em;
+    margin-right: 3em;
+}
 
 .bot{
     background-color: rgb(163, 180, 149);
@@ -436,9 +446,20 @@ nav ul li a:hover{
     }
 }  
 
+.screenshot{
+    max-width: 1400px;
+    margin-left: 130px;
+    margin-top: -2em;
+    background-color: rgb(251, 245, 239);
+}
 
 
-
+.screenshot img{
+    width: 20em;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-bottom: 3em;
+}
 
 .text-box4{
     max-width: 1400px;
@@ -514,6 +535,12 @@ nav ul li a:hover{
 .text-box4 iframe{
     margin-left: 10em;
     width: 50em;
+
+}
+
+.modeling iframe{
+    margin-left: 10em;
+
 
 }
 
