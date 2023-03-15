@@ -198,29 +198,6 @@ nav ul li a:hover{
 }
 
 
-@media(max-width: 800px){
-    .objects img{
-        width: 10em;
-    }
-}  
-
-@media(min-width: 960px){
-    .objects img{
-        width: 13em;
-    }
-    .horiz img{
-        width: 54em;
-    }
-}  
-@media(min-width: 1100px){
-    .objects img{
-        width: 20em;
-    }
-    .horiz img{
-        width: 54em;
-    }
-}  
-
 
 .container{
     max-width: 1170px;

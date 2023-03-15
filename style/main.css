@@ -233,6 +233,30 @@ nav ul li a:hover{
     width: 20rem;
     height: auto;
 }
+.projects video{
+    /*box-shadow: 0 10px 20px #414979;
+    border-radius: 10px;*/
+    width: 30rem;
+    height: 18em;
+}
+
+.projects iframe{
+    /*box-shadow: 0 10px 20px #414979;
+    border-radius: 10px;*/
+    width: 30rem;
+    height: 18em;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.heihei img{
+    width: 30rem;
+    height: 18em;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
 
 .box{
     float: left;
