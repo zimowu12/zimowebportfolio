@@ -145,6 +145,46 @@ nav ul li a:hover{
     padding: 50px;
 }
 
+.horizontal{
+    margin-top: 5em;
+    margin-left: 10em;
+    max-width: 100em;
+}
+
+.horizontal img{
+    width: 40rem;
+    box-shadow: 0 10px 20px #414979;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10em;
+    margin-bottom: 5em;
+    
+}
+
+.horizontal iframe{
+    width: 50rem;
+    height: 35em;
+    box-shadow: 0 10px 20px #414979;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    margin-bottom: 5em;
+    
+}
+
+.horiz{
+    margin-left: 4em;
+    max-width: 100em;
+}
+
+.horiz img{
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+    
+}
 .objects{
     margin-top: 2em;
     margin-left: 4em;
