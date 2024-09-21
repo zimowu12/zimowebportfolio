@@ -22,33 +22,40 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#proj">PROJECTS</a></li>
                     <li><a href="dream.html">DREAMS</a></li>
-                    <li><a href="#contactme">CONTACT</a></li>
+                    <!-- <li><a href="#contactme">CONTACT</a></li> -->
+                    <li><a href="#" id="contactLink">CONTACT</a></li>
+                    
                 </ul>
             </nav>
             <div class="rec">
-                <h3>Welcome to Zimo's Portfolio Website</h1>>
+                <!-- <h3>Welcome to Zimo's Portfolio Website</h1>> -->
             </div>
         <div class="zero">
-            <div class="text-box">
-                <img src="images/other/coverimage.JPG" alt="cover">
-            </div>
+            
 
             <div class="text-box">
                 
                 <h1>Zimo Wu</h1>
-                <p>My name is Zimo Wu. I am a fourth year Computer Science student studying at Queen's University, majoring in Game Development. 
-                    I am from Beijing, China, but I came to Canada in 2017. I spent two years of high school in Ottawa, and moved to Kingston for University.
-                    I am a girl with rich imagination and has a lot of creative ideas. I am interested in digital media as my major and my hobbies both 
-                    fall into that category.
+                <p>
+                    <br>
+                    Hi, I’m Zimo, a Master's of Digital Media student studying at the CDM with a background in Computer Science, specializing in Game Development.<br>
 
-                    For example, I made lots of videos in the past few years, including game videos, music videos and vlogs. 
-                    I enjoy reading books, drawing and painting. I also have some experiences in
-                    game design, character design, photography, illustration, and animation.
+                    <br>As a software and game developer, I have over 4 years of experience in Unity and 5+ years experience in Python, C++ and other languages. I’ve worked on a variety of projects, including interactive stories for Apple Vision Pro, runtime tools for level design, multiplayer games, and research on AI/machine learning applications.
+                    <!--
+                    <br><br>I chose to pursue a master’s in Digital Media because I also have interests for design and the artistic side of development. I enjoy collaborating with other disciplines to create intuitive and engaging user experiences. Learning from different fields enriches my understanding of the production pipeline and diverse mindsets, enhancing my ability to integrate their perspectives into my work.
+                    -->
+                    
+                    
+                    <br><br> Always keeping user-centric design in mind, I aim to use my skills to create work that resonates deeply with people.
                 </p>
-                <a href="images/other/cv_Zimo Wu.pdf" target="_blank">View My Resume</a>
+                <a href="images/other/SoftwareDeveloper_Resume2024_Zimo.pdf" target="_blank">View My Resume</a>
                 
                 
           
+            </div>
+
+            <div class="text-box">
+                <img src="images/other/professional.jpeg" alt="cover">
             </div>
         </div>
     </section>
@@ -85,7 +92,7 @@
             <button class="btn" onclick="filterObjects('all')">Show All</button>
             <button class="btn" onclick="filterObjects('programming')">Programming</button>
             <button class="btn" onclick="filterObjects('designs')">Designs</button>
-            <button class="btn" onclick="filterObjects('videos')">Vides/Films</button>
+            <!--<button class="btn" onclick="filterObjects('videos')">Vides/Films</button>-->
             <button class="btn" onclick="filterObjects('art')">Art</button>
             <button class="btn" onclick="filterObjects('photos')">Photography</button>
             <button class="btn" onclick="filterObjects('animation')">Animation</button>
@@ -96,17 +103,55 @@
         <div class="objects">
             
             <div class="box programming">
-                <a href="gameAI.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
+                <a href="vision.html"><img src="images/VP/LOAPCover.png" alt="VP"></a>
+                <h5>Apple Vision Pro Interactive Story</h5>
+                <h3>Creating a 7min immersive mixed reality experience in Vision Pro using Unity’s PolySpatial and XR Interaction
+                    Toolkit</h3>
+                <h6>2024 Summer</h6>
+            </div>
+
+            <div class="box programming">
+                <a href="tool.html"><img src="images/Tool/jezzhappy.webp" alt="game AI"></a>
+                <h5>Fresh Tracks Level Design Editor Tool</h5>
+                <h3>Enhanced the Level Design Editor Tool in Unity for the game Fresh Tracks by Buffalo Buffalo.</h3>
+                <h6>2024 Spring</h6>
+            </div>
+
+            <!-- <div class="box programming">
+                <a href="cow.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
                 <h5>Behaviour Tree AI: Creating a game AI using Unity</h5>
                 <h3>Coding in c#, drawing behaviour tree with the behaviour tree editor</h3>
                 <h6>2022 Fall</h6>
             </div>
+
+            <div class="box programming">
+                <a href="tarot.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
+                <h5>Behaviour Tree AI: Creating a game AI using Unity</h5>
+                <h3>Coding in c#, drawing behaviour tree with the behaviour tree editor</h3>
+                <h6>2022 Fall</h6>
+            </div>
+            <div class="box programming">
+                <a href="fries.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
+                <h5>Behaviour Tree AI: Creating a game AI using Unity</h5>
+                <h3>Coding in c#, drawing behaviour tree with the behaviour tree editor</h3>
+                <h6>2022 Fall</h6>
+            </div> -->
+
             <div class="box programming">
                 <a href="depression.html"><img src="images/borealis/LSI Social Graphic – 2_v2.jpg" alt="Borealis AI project"></a>
                 <h5>Forecast Depression Level using data from Reddit posts</h5>
                 <h3>Coding with Python and Python Libraries, Borealis AI: Let's Solve It! program</h3>
                 <h6>2021 Fall</h6>
             </div>
+
+
+            <div class="box programming">
+                <a href="gameAI.html"><img src="images/gameAI/cover1.jpg" alt="game AI"></a>
+                <h5>Behaviour Tree AI: Creating a game AI using Unity</h5>
+                <h3>Coding in c#, drawing behaviour tree with the behaviour tree editor</h3>
+                <h6>2022 Fall</h6>
+            </div>
+            
 
             
             <div class="box programming">
@@ -121,8 +166,29 @@
                 </a>
                 <h5>Trouble Maker: A 2+3D action maze game implementing with Unity</h5>
                 <h3>This is the project I am currently working on.</h3>
-                <h6>2023 Winter - now</h6>
+                <h6>2023 Spring</h6>
             </div>
+
+            <div class="box designs">
+                <a href="https://18zw108.wixsite.com/researchproject">
+                    <img src="images/other/film.jpg" alt="Film essay web">
+                </a>
+                <h5>Reediting and Interactive films: Creating Interactions for Audience through Database Cinema</h5>
+                <h3>A film course essay in a web format made using wix.com</h3>
+                <h6>2021 Summer</h6>
+            </div>
+
+            <div class="box programming">
+                <a href="https://github.com/judepowerful/cisc322">
+                    <img src="images/other/software.jpg" alt="Website">
+                </a>
+                <h5>Anaylze the software architecture of the 
+                    automobile Apollo in three parts: Conceptual, concrete, and enhancement proposal
+                </h5>
+                <h3>View GitHub repository for the slides and report displayed using GitHub Pages</h3>
+                <h6>2021 Winter</h6>
+            </div>
+            
             <div class="box programming">
                 <a href="web.html">
                     <img src="images/other/personalweb.jpg" alt="Website">
@@ -140,14 +206,14 @@
                 <h6>2021 Fall</h6>
             </div>
 
-            <div class="box programming">
+            <!-- <div class="box programming">
                 <a href="trashure.html"><img src="images/trash.png" alt="game AI"></a>
                 <h5>Trashure</h5>
                 <h3>A 3d virtual marketspace for reuse furnitures</h3>
                 <h6>2023 Fall</h6>
-            </div>
+            </div> -->
             
-            <div class="box animation designs">
+            <div class="box animation art">
                 <a href="https://youtu.be/m6PSCYdnhuc">
                     <img src="images/character/IMG_6392.JPG" alt="School Projects">
                 </a>
@@ -157,14 +223,7 @@
             </div>
 
             
-            <div class="box photos">
-                <a href="photo.html">
-                    <img src="images/other/cover.jpeg" alt="photography">
-                </a>
-                <h5>Photography</h5>
-                <h3>Cannon 750d, iPhone X, iPhone 13</h3>
-                <h6>recent years</h6>
-            </div>
+            
 
             <div class="box art">
                 <a href="art.html">
@@ -175,7 +234,14 @@
 
             </div>
         
-            
+            <div class="box photos">
+                <a href="photo.html">
+                    <img src="images/other/cover.jpeg" alt="photography">
+                </a>
+                <h5>Photography</h5>
+                <h3>Cannon 750d, iPhone X, iPhone 13</h3>
+                <h6>recent years</h6>
+            </div>
 
         
            
@@ -198,27 +264,9 @@
 
             
             
-            <div class="box designs">
-                <a href="https://18zw108.wixsite.com/researchproject">
-                    <img src="images/other/film.jpg" alt="Film essay web">
-                </a>
-                <h5>Reediting and Interactive films: Creating Interactions for Audience through Database Cinema</h5>
-                <h3>A film course essay in a web format made using wix.com</h3>
-                <h6>2021 Summer</h6>
-            </div>
-
-            <div class="box programming">
-                <a href="https://github.com/judepowerful/cisc322">
-                    <img src="images/other/software.jpg" alt="Website">
-                </a>
-                <h5>Anaylze the software architecture of the 
-                    automobile Apollo in three parts: Conceptual, concrete, and enhancement proposal
-                </h5>
-                <h3>View GitHub repository for the slides and report displayed using GitHub Pages</h3>
-                <h6>2021 Winter</h6>
-            </div>
-
             
+
+        <!--    
             
         <div class="box videos">
             <a href="video.html">
@@ -250,7 +298,7 @@
                 <h3>Game design, rules of game, character designs, UI</h3>
                 <h6>2021 Fall</h6>
             </div>
-            
+    
         <div class="box videos">
             <a href="tiktok.html">
             <img src="images/other/weibo.jpg" alt="videos">
@@ -259,7 +307,7 @@
             <h3>Videos about the game Sky</h3>
             <h6>2020 Winter - 2022 Summer</h6>
         </div>
-
+    -->
         
         
             
@@ -288,6 +336,8 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
+
+                    <!--
                     <h4>Contact Me</h4>
                     <ul>
                         <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
@@ -302,37 +352,59 @@
                         <li>微信: xfww77</li>
                     </ul>
                 </div>
+            -->
+
                 <div class="footer-col">
                     <h4>follow me</h4>
                     <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
                         <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
                         
-                        <!--
-                        <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
-                        <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
-                        <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
-                        <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
 
-                        -->
+                        
+                        <!-- <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                        <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a> -->
+
      
                     </div>
                         
   
                 </div>
+                
                 <div class="footer-col">
-                    <h4>Other social media</h4>
-                    <ul>
-                        <li><a href="#">微博：兮木鬼鬼</a></li>
-                        <li><a href="#">小红书：兮木鬼鬼</a></li>
-                    </ul>
-                </div>
+                    <h6>© Zimo Wu 2024. All rights reserved.</h6>>
+                </div> 
+
+
+                
             </div>
         </div>
         
         
     </footer>
+
+    <div id="contactFormPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

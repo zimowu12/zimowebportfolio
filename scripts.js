@@ -32,3 +32,23 @@ function removeClass(element, name){
     }
     element.className = arr1.join(" ");
 }
+
+
+const contactLink = document.getElementById('contactLink');
+const contactFormPopup = document.getElementById('contactFormPopup');
+const closeBtn = document.querySelector('.close');
+
+contactLink.onclick = function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    contactFormPopup.style.display = 'flex';
+}
+
+closeBtn.onclick = function() {
+    contactFormPopup.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target === contactFormPopup) {
+        contactFormPopup.style.display = 'none';
+    }
+}
