@@ -18,7 +18,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="index.html#proj">PROJECTS</a></li>
                     <li><a href="dream.html">DREAMS</a></li>
-                    <li><a href="#contactme">CONTACT</a></li>
+                    <li><a href="#" id="contactLink">CONTACT</a></li>
                 </ul>
                 
                 
@@ -200,6 +200,8 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
+    
+                        <!--
                         <h4>Contact Me</h4>
                         <ul>
                             <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
@@ -214,36 +216,59 @@
                             <li>微信: xfww77</li>
                         </ul>
                     </div>
+                -->
+    
                     <div class="footer-col">
                         <h4>follow me</h4>
                         <div class="social-links">
+    
+                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
                             <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
-                            <!--
                             
-                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
-                            <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
-                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
-                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
     
-                            -->
+                            
+                            <!-- <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a> -->
+    
          
                         </div>
                             
       
                     </div>
+                    
                     <div class="footer-col">
-                        <h4>Other social media</h4>
-                        <ul>
-                            <li><a href="#">微博：兮木鬼鬼</a></li>
-                            <li><a href="#">小红书：兮木鬼鬼</a></li>
-                        </ul>
-                    </div>
+                        <h6>© Zimo Wu 2024. All rights reserved.</h6>>
+                    </div> 
+    
+    
+                    
                 </div>
             </div>
             
             
         </footer>
+    
+        <div id="contactFormPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
     </body>
 </html>
