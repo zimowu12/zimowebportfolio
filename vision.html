@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Zimo's personal portfolio website. This subpage contains the Vision Pro Project.">
+        <title>Love on a Plate</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="style/subpage.css">
+    </head>
+    <body>
+        <section class="hero">
+
+            <nav>
+                <img src="images/other/logoxi.png" class="logo">
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#proj">PROJECTS</a></li>
+                    <li><a href="dream.html">DREAMS</a></li>
+                    <li><a href="#contactme">CONTACT</a></li>
+                </ul>
+                
+                
+            </nav>
+
+            <div class="rec">
+                
+            </div>
+           
+
+            <div class="text-box">
+                    <h1>Love on a Plate</h1>
+                    <h2>Apple Vision Pro Interactive Story</h2>
+
+                <h4></h4>
+                
+                <p>
+                    This is a client project that I worked on with 7 other team members for the innovative startup Love on a Plate. 
+                    The prototype is an immersive mixed reality experience designed to be showcased in Apple Vision Pro using Unity. 
+                    This 6-7 minute experience dives into the culinary journey of Chef Nagata, highlighting the intricate process of cooking crème brûlée. 
+                    The project leverages cutting-edge mixed reality technology to blend digital and physical worlds, offering users an engaging and educational culinary narrative. 
+
+                </p>
+
+                <ul></ul>
+                    <h5>Team members:</h5>
+                    <li>Lead Developer: Zimo Wu</li>
+                    <li>Developers: Sally Park, Anh Vu</li>
+                    <li>3D Artists: Carola Li, Han Zhang</li>
+                    <li>Project Manager: Hannah Meng</li>
+                    <li>UX/UI Designe: Caterina Mao</li>
+                    <li>Narrative Designer: Elizabeth Frone</li>
+                </ul>
+                <a href="https://gitlab.thecdm.ca/zimowu012/loveonaplate_teamcatflix" target="_blank">View repository</a>
+
+                
+                    
+            </div>
+
+            
+                
+            <div class="image">
+                <video src="images/VP/500 Love on a Plate Trailer.mov" controls width="800">Trailer</video>
+            </div>
+
+            
+            
+        </section>
+        <div class="bot">
+            <h3>Welcome to Zimo's Portfolio Website</h1>>
+        </div>
+
+        <section class="introduce">
+            <div class="text-box4">
+                
+
+                <div class="links">
+                    <a href="images/VP/Technical Design Document_Love on a Plate.pdf" target="_blank">View Technical Design Document</a>
+                    <a href="https://drive.google.com/file/d/1zabeDFOe--g7hfWYoHPlkA2F6IbeWnB9/view?usp=sharing" target="_blank">View Prototype</a>
+    
+                </div>
+                <h1>Process</h1>
+
+                <p>After our initial client meeting and debrief, our team began researching both the technology and artistic elements of the project. 
+                    Given the technical limitations of the emerging technology and our lack of prior experience, we dedicated time to learning and researching 
+                    to define the project’s scope and clarify our vision. Our narrative designer collaborated closely with the client to translate their ideas 
+                    into a cohesive script and story centered on the chef character. Meanwhile, our UX designer focused on mapping the experience by scene, 
+                    ensuring alignment with the narrative. 
+                </p>
+
+                <h4>UX Design Story Board</h3>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Qf6rVWwcFKhWnk4v670fGX/LOVE-ON-A-PLATE?node-id=928-8&embed-host=share" allowfullscreen></iframe>
+
+
+                <h4>Technical Research</h4>
+                
+                <p> Our technical research involved extensive trial and testing as we set up the project environment. 
+                    We explored compatible Xcode and Unity versions and configured visionOS within Xcode. 
+                    We tried to use the debug tool Play to Device but found many limations to it. We learned how to deploy the project to the apple vision pro device.
+                    And of course we played around with Vision Pro and get familiar with the eye gazing and gazing, etc.
+                    </p>
+                    <video src="images/VP/1-beginningresearch.mov" controls width="800">Trailer</video> 
+                    <p>
+                    We experimented with Unity's PolySpatial Tools to effectively support visionOS functionality 
+                    and assessed the feasibility of specific interactive features. For instance, we utilized Apple Vision 
+                    Pro’s pinch gesture to simulate actions like sprinkling sugar, and we worked with the XR Interaction Toolkit to implement 
+                    additional gestures, such as grab interactions. </p>
+                    
+                    
+                    
+                    <p>
+                        Additionally, we developed methods for seamless transitions between Mixed Reality (MR) 
+                        and Virtual Reality (VR), including techniques like a simulated skybox, and experimented with fading spatial videos to enhance overall user immersion.
+                    </p>
+
+                
+                <img src="images/VP/2-fakeskybox.png" alt="vp project">    
+
+                <p>There are lots of limitations implementing for vision pro in Unity. For example, particle effects and visual effects are working fine in Unity but not in VP. We had to customize shader
+                    graphs to be able to see the visual effects in VP.
+                </p>
+                <video src="images/VP/ParticlesInUnity.mov"controls width="800">Trailer</video>  
+                 
+
+                <h4>Features</h3>
+                <p>While our entire project process was more about learning as we progressed, we ultimately implemented three key features:</p>
+                <p>User Interactions:
+                    <br>
+                    This included gestures like pinching, pressing the bell, grabbing oranges, and sprinkling sugar.</p>
+
+                <video src="images/VP/graborange.mp4"controls width="800">Trailer</video>  
+
+                <p>Spatial Videos:
+                    <br>We created engaging spatial videos that narrated the chef's cooking journey and provided background stories.</p>
+                <video src="https://drive.google.com/file/d/1zabeDFOe--g7hfWYoHPlkA2F6IbeWnB9/view?usp=sharing"controls width="800">Trailer</video>  
+         
+                <p>Smooth Transitions:
+                    <br>We ensured seamless transitions between Mixed Reality (MR) and Virtual Reality (VR) experiences, enhancing overall immersion.</p>>
+
+                
+                    <h4>VisionOS Development Guide</h4>
+                    <p>To facilitate future development, we created a VisionOS Development Guide for our client. This comprehensive guide includes step-by-step guidance on configuring the project environment. See TDD.</p>
+                    <h4>Design overview</h4>
+                    <p>To enhance clarity and streamline the development process, we established a naming convention for the scenes. 
+                        This convention includes scene numbers and main identifiers, making it easier to differentiate and locate scenes within Unity. 
+                        Given that our MR project incorporates both mixed reality and simulated VR environments through the use of fake skyboxes, 
+                        we structured the scenes to reflect both narrative segments and significant environmental changes.
+                        Scenes are categorized based on narrative progression and major environmental changes, such as skybox transitions. 
+                        This structure enables developers to work on distinct segments of the project more effectively. It also simplifies 
+                        the management of interactions, videos, and 3D assets, ensuring a more organized and efficient development workflow.
+                        However, many scene names were initially set with placeholder titles for testing purposes. Due to time constraints 
+                        towards the end of the project, we completed a general cleanup of the project but were unable to undertake a more 
+                        comprehensive refinement and rename the scenes as initially planned.
+                        </p>
+                    <h4>Testing and Results</h4>
+                    <p>We conducted extensive testing throughout the development process to ensure the quality and usability of our prototype. This included both internal and external testing phases.
+                        Internally, our team members, including developers, UX designers, and narrative designers, participated in a series of user and usability tests. These tests were crucial for identifying and addressing issues early on.
+                        In addition to internal testing, we engaged in weekly testing sessions with our client, Yangos. His detailed feedback each week was instrumental in refining our prototype. His strong opinions and persistent emphasis on certain features, coupled with his tendency to reassess based on actual implementation, led to numerous modifications. This iterative process significantly influenced the development and evolution of the prototype.
+                        We also conducted external user tests with individuals from diverse backgrounds to ensure broad usability and gather a range of perspectives. This comprehensive testing approach allowed us to enhance the prototype based on diverse user inputs and iterative feedback.
+                        </p>
+                    <h4>Team</h4>
+                    <p>Working on this project was quite complex, given the large team size and the tight timeline of just 14 weeks. 
+                        There were some good memories: visiting the chef's kitchen, where he cooked for us, which was a fantastic experience. </p>
+                        <video src="images/VP/vi1.mov"controls width="800">Trailer</video>  
+                        <img src="images/VP/pic1.jpg" alt="vp project">    
+                        <img src="images/VP/pic2.jpg" alt="vp project">   
+                        
+                        <p>
+                        Else, we dedicated a lot of effort to this project, resulting in countless screen recordings and screenshots documenting our progress.
+                    <br>
+                    However, we didn’t escape conflicts along the way. These conflicts impacted my mental health, and I'm not grateful for that experience. 
+                    Nonetheless, it helped me reflect on how I can protect myself and approach similar situations more effectively in the future. 
+                    While this project may not fully represent my technical skills or soft skills, it provided me with valuable lessons and experiences in problem-solving that I can carry forward.</p>
+                        <video src="images/VP/progress_love.MP4"controls width="800">Trailer</video>  
+
+
+                    
+                    
+            
+            </div>
+        </section>
+
+
+        <footer class="footer" id="contactme">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Contact Me</h4>
+                        <ul>
+                            <li><a href="#">Phone Number: (1)-613-913-9362</a></li>
+                            <li><a href="#">Email: zimoyuhu@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>商务合作</h4>
+                        <ul>
+                            <li>电话: (1)-613-913-9362</li>
+                            <li>邮箱: zimoyuhu@gmail.com</li>
+                            <li>微信: xfww77</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow me</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/zimo.wu.98"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/zimoyuhu?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/zimo-wu-17b1a3227/"><i class="fab fa-linkedin-in"></i></a>
+                            <!--
+                            
+                            <a href="https://github.com/zimowu12?tab=repositories"><i class="fab fa-github"></i></a>
+                            <a href="https://weibo.com/u/6340636282?tabtype=feed"><i class="fab fa-weibo"></i></a>
+                            <a href="https://account.bilibili.com/account/home?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAA6rxMa2mHVB4jQyswmzhxIXusxqWA8XIzHSlD1MWDfko"><i class="fab fa-tiktok"></i></a>
+    
+                            -->
+         
+                        </div>
+                            
+      
+                    </div>
+                    <div class="footer-col">
+                        <h4>Other social media</h4>
+                        <ul>
+                            <li><a href="#">微博：兮木鬼鬼</a></li>
+                            <li><a href="#">小红书：兮木鬼鬼</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </footer>
+    </body>
+</html>
